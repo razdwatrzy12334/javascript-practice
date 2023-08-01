@@ -44,13 +44,31 @@
 
             // button.addEventListener("click", greet);
 
-            let hour = 12;
-            let isWeekend = true;
+            // let hour = 12;
+            // let isWeekend = true;
 
-            if (hour < 10 || hour > 18 || isWeekend) {
-            alert( 'The office is closed.' ); // it is the weekend
+            // if (hour < 10 || hour > 18 || isWeekend) {
+            // alert( 'The office is closed.' ); // it is the weekend
+            // }
+
+            let userName = prompt("Who's there?", '');
+
+            if (userName === 'Admin') {
+
+                let pass = prompt('Password?', '');
+
+                if (pass === 'TheMaster') {
+                    alert( 'Welcome!' );
+                    } else if (pass === '' || pass === null) {
+                    alert( 'Canceled' );
+                    } else {alert( 'Wrong password' );
+                    }
+
+            } else if (userName === '' || userName === null) {
+            alert( 'Canceled' );
+            } else {
+            alert( "I don't know you" );
             }
-
 
         </script>
 
